@@ -20,7 +20,9 @@ clicking an “Agree” or similar button, where this option is provided by Appl
 
 Whenever capitalized in this Agreement:
 
-“Accessory Data Transport Extension” means an extension bundled as part of Your Application that, as its sole purpose, securely shares information directly between an end user’s Apple-branded device and an Authorized Wi-Fi Target Accessory.
+“Accessory Data Transport Extension” means an extension bundled as part of Your Application that, as its sole purpose, securely shares information directly between an end user’s Apple-branded device and an Authorized Target Accessory.
+
+“Accessory Notifications Framework” and “Accessory Live Activities Framework” mean Documented APIs for each respective framework that provide Your Application with the ability to share Forwarding Information from other Applications, provided an end user has explicitly authorized Your Application on their iPhone to access and share such information, using such framework, with that Authorized Target Accessory of Yours.
 
 “Ad Network APIs” means the Documented APIs that provide a way to validate the successful conversion of advertising campaigns on supported Apple-branded products using a combination of cryptographic signatures and a registration process with Apple.
 
@@ -78,7 +80,7 @@ Whenever capitalized in this Agreement:
 
 “Authorized Test Units” means Apple-branded hardware units owned or controlled by You that have been designated by You for Your own testing and development purposes under this Program, and if You permit, Apple-branded hardware units owned or controlled by Your Authorized Developers so long as such units are used for testing and development purposes on Your behalf, or, if You are a university, Apple-branded hardware units owned or controlled by You and Your Authorized Student Developers that are designated by You for educational purposes, and only as permitted hereunder.
 
-“Authorized Wi-Fi Target Accessory” means a Wi-Fi capable accessory that an end user has explicitly authorized Your Application on their Apple-branded device to securely pair and share the Wi-Fi Network Sharing Information with.
+“Authorized Target Accessory” means Your accessory that an end user has explicitly authorized Your Application on their Apple-branded device to securely pair and share: (i) the Wi-Fi Network Sharing Information, for purposes of the Wi-Fi Infrastructure Framework; and/or (ii) the Forwarding Information, for purposes of the Accessory Notifications Framework and Accessory Live Activities Framework, as applicable.
 
 “Background Assets Framework” means the Documented APIs that provide Applications with the ability to perform download operations in the background before first launch of the Application by the user and at other times after the first launch.
 
@@ -116,17 +118,23 @@ Whenever capitalized in this Agreement:
 
 “Face Data” means information related to human faces (e.g., face mesh data, facial map data, face modeling data, facial coordinates or facial landmark data, including data from an uploaded photo) that is obtained from a user’s device and/or through the use of the Apple Software (e.g., through ARKit, the Camera APIs, or the Photo APIs), or that is provided by a user in or through an Application (e.g., uploads for a facial analysis service).
 
+“Family Controls Framework” means the Documented APIs that enable Your Application to provide app and website usage controls on an Apple-branded product.
+
+“Forwarding Information” means any notification, including any content, data or information, provided through or transmitted via the Accessory Notifications Framework or Accessory Live Activities Framework respectively, including notifications from any Applications or any other information derived from them (e.g., decrypted, hashed, re-encrypted, re-sized, re-formatted, summarized).
+
 “FOSS” (Free and Open Source Software) means any software that is subject to terms that, as a condition of use, copying, modification or redistribution, require such software and/or derivative works thereof to be disclosed or distributed in source code form, to be licensed for the purpose of making derivative works, or to be redistributed free of charge, including without limitation software distributed under the GNU General Public License or GNU Lesser/Library GPL.
 
 “Foundation Models Framework Acceptable Use Requirements” means the requirements found at https://developer.apple.com/apple-intelligence/acceptable-use-requirements-for-the-foundation-models-framework, as may be updated from time-to-time.
 
 “Foundation Models Framework” means the Documented APIs that enable You to access, prompt, or otherwise use the Foundation Models framework, including the model accessed by the framework, in any manner, including through an Adapter.
 
+“Foveated Streaming Framework” means the Documented APIs that provide an Application with the ability to establish a session for streaming content, data or information from local or remote streaming endpoints to Apple Vision Pro.
+
+“Foveated Streaming Information” means any content, data, or information provided through or transmitted via the use of the Foveated Streaming Framework, including, but not limited to, information such as the approximate region where an end user is looking.
+
 “FPS Deployment Package” means the D Function specification for commercial deployment of FPS, the D Function reference implementation, FPS sample code, and set of unique production keys specifically for use by You with an FPS implementation, if provided by Apple to You.
 
 “FPS SDK” means the FPS specification, FPS server reference implementation, FPS sample code, and FPS development keys, as provided by Apple to You.
-
-“FOSS” (Free and Open Source Software) means any software that is subject to terms that, as a condition of use, copying, modification or redistribution, require such software and/or derivative works thereof to be disclosed or distributed in source code form, to be licensed for the purpose of making derivative works, or to be redistributed free of charge, including without limitation software distributed under the GNU General Public License or GNU Lesser/Library GPL.
 
 “Game Center” means the gaming community service and related APIs provided by Apple for use by You in connection with Your Applications that are associated with Your developer account.
 
@@ -488,9 +496,9 @@ In addition, any form of data, content or information collection, processing, ma
 
 B. Collection and Use of Data
 
-You and Your Applications (and any third party with whom You have contracted to serve advertising) may not collect user or device data without prior user consent, whether such data is obtained directly from the user or through the use of the Apple Software, Apple Services, or Apple SDKs, and then only to provide a service or function that is directly relevant to the use of the Application, or to serve advertising in accordance with Sections 3.3.3(E). You may not broaden or otherwise change the scope of usage for previously collected user or device data without obtaining prior user consent for such expanded or otherwise changed data collection. Neither You nor Your Application will use any permanent, device-based identifier, or any data derived therefrom, for purposes of uniquely identifying a device. And neither You nor Your Application will derive any data from a device for the purpose of uniquely identifying it or a user.
+You and Your Applications (and any third party with whom You have contracted to serve advertising) may not collect user or device data without prior user consent, whether such data is obtained directly from the user or through the use of the Apple Software, Apple Services, or Apple SDKs, and then only to provide a service or function that is directly relevant to the use of the Application, or to serve advertising in accordance with Section 3.3.3(E). You may not broaden or otherwise change the scope of usage for previously collected user or device data without obtaining prior user consent for such expanded or otherwise changed data collection. Neither You nor Your Application will use any permanent, device-based identifier, or any data derived therefrom, for purposes of uniquely identifying a device. And neither You nor Your Application will derive any data from a device for the purpose of uniquely identifying it or a user.
 
-You are responsible for ensuring that Your Application, including any third-party SDKs (i.e., an SDK not provided by Apple), complies with this Agreement and the Documentation. If Your Application uses certain APIs identified in the Documentation, the metadata in Your Application must identify one or more permitted reasons that accurately reflect Your use of each of those APIs and the data derived for their use. You may use these APIs, and the data derived from their use, for the identified reasons only. Further, if Your Application includes a third-party SDK that is identified in the Documentation as commonly used, You must ensure such third-party SDK is signed by the SDK provider and includes required metadata as described in the Documentation.
+You are responsible for ensuring that Your Application, including any third-party SDKs (i.e., an SDK not provided by Apple) and any service with whom You have contracted, complies with this Agreement and the Documentation. If Your Application uses certain APIs identified in the Documentation, the metadata in Your Application must identify one or more permitted reasons that accurately reflect Your use of each of those APIs and the data derived for their use. You may use these APIs, and the data derived from their use, for the identified reasons only. Further, if Your Application includes a third-party SDK that is identified in the Documentation as commonly used, You must ensure such third-party SDK is signed by the SDK provider and includes required metadata as described in the Documentation.
 
 C. Disclosures to Users
 
@@ -621,6 +629,10 @@ You may not transmit off the user’s device any information about whether an im
 P. Declared Age Range API and Significant App Update Topic API
 
 Your Application may access the Declared Age Range API to request a user’s age range only for the purposes of providing age-appropriate content and/or features for end users in Your Application, or to comply with laws that require Your Application to receive age range information. You understand that data from the Declared Age Range API is based on information provided to Apple that is declared by an end user, or their parent or guardian, and may be confirmed using a payment method (like a credit card), government ID, or another method.  You may not share or sell user data obtained from this API to data brokers or information resellers. You are solely responsible for ensuring compliance with associated laws or regulations that may apply to You, and understand that Your use of the Declared Age Range API and Significant App Update Topic API is subject to Section 10 (Indemnification).
+
+Q. Family Controls Framework
+
+To use the Family Controls Framework, Your Application must have a primary purpose of (1) offering family controls for parents and guardians, through Family Sharing, to supervise their children’s app usage; and/or (2) offering individuals the ability to manage their devices to enable focus and productivity through focus controls, timers and task management, or personal device usage management. The Family Controls Framework may not be used for other purposes, such as ad blocking, in organizational settings, or for managing the device of another adult individual. Device or usage data received through the Family Controls Framework may only be used for providing family controls, or individual device management. You and Your Application may not share device or usage data received through the Family Controls Framework or otherwise, beyond the family controls You provide, or the individual and their device, respectively. You may not use or share such device or usage data for purposes of advertising or advertising measurements, or share device or usage data with a data broker.
 
 3.3.4 Content Rights and Licensing
 
@@ -770,6 +782,18 @@ I. Default Dialer APIs
 
 You and Your Application must store and transmit user conversation history and associated metadata for carrier-based calls from using the Default Dialer APIs in a secure manner (e.g., conversation history synced to a server must be encrypted in transit and at rest). You and Your Application may not use the Default Dialer APIs for sending unsolicited messages or for phishing or spamming, including but not limited to engaging in any types of activities that violate anti-spamming laws and regulations, or that are otherwise illegal.
 
+J. Accessory Notifications Framework and Accessory Live Activities Framework
+
+You, Your Application and Your Authorized Target Accessory may not use Forwarding Information for advertising, profiling, training models, or monitoring location. You or Your Application may not disseminate the Forwarding Information to any other Application, or any other device besides Your Authorized Target Accessory. And an Authorized Target Accessory may not share Forwarding Information or any associated cryptographic keys with any other device, including the end user’s iPhone or any other Authorized Target Accessory. You, Your Application and Your Authorized Target Accessory may not modify the Forwarding Information in a manner that materially changes the meaning of the Forwarding Information, and only to the extent reasonably required for adequately disclosing the Forwarding Information to the end user on Your Authorized Target Accessory.
+
+You, Your Application and Your Authorized Target Accessory may not remotely store any Forwarding Information (e.g. on a cloud service or another remote device), except only as necessary to enable delivery to Your Authorized Target Accessory. The Forwarding Information may not be decrypted other than on Your Authorized Target Accessory. You acknowledge Your use of the Accessory Notifications Framework, the Accessory Live Activities Framework, and Forwarding Information is subject to Section 3.3.3. You further acknowledge and agree that You and Your Application are responsible to Apple for Your Authorized Target Accessory’s compliance with this Section 3.3.7(J).
+
+Even if Your Application does not use the Accessory Notifications Framework or the Accessory Live Activities Framework, You consent that Forwarding Information associated with Your Application may be forwarded to an Authorized Target Accessory of another developer, provided the end user has granted explicit authorization.
+
+K. Foveated Streaming Framework
+
+You, Your Application and any service that your Application communicates with may use the Foveated Streaming Framework and the Foveated Streaming Information only for streaming content, data or information in connection with Your Application, and must store and transmit the Foveated Streaming Information in a secure manner. You, Your Application and any service that your Application communicates with may not use, enable use, promote use, or make available the Foveated Streaming Information for unrelated purposes (e.g., for advertising or analytics). You may not share or sell user data obtained from this framework to advertising platforms, data brokers or information resellers. You acknowledge Your use of the Foveated Streaming Framework is subject to Section 3.3.3.
+
 3.3.8 Other Technologies
 
 A. Xcode Cloud
@@ -814,9 +838,9 @@ By accessing, prompting, or otherwise using the Foundation Models Framework, or 
 
 J. Wi-Fi Infrastructure Framework
 
-You and Your Application may use the Wi-Fi Infrastructure Framework only for transmitting Wi-Fi Network Sharing Information, via Your Accessory Data Transport Extension, from an Apple-branded device to an Authorized Wi-Fi Target Accessory. You and Your Application may transmit Wi-Fi Network Sharing Information only for connecting the Authorized Wi-Fi Target Accessory to a Wi-Fi network that the end user’s Apple-branded device is capable of connecting to. You and Your Application must transmit the Wi-Fi Network Sharing Information directly to the Authorized Wi-Fi Target Accessory, and only in a secure, authenticated, and end-to-end encrypted manner.
+You and Your Application may use the Wi-Fi Infrastructure Framework only for transmitting Wi-Fi Network Sharing Information, via Your Accessory Data Transport Extension, from an Apple-branded device to an Authorized Target Accessory. You and Your Application may transmit Wi-Fi Network Sharing Information only for connecting the Authorized Target Accessory to a Wi-Fi network that the end user’s Apple-branded device is capable of connecting to. You and Your Application must transmit the Wi-Fi Network Sharing Information directly to the Authorized Target Accessory, and only in a secure, authenticated, and end-to-end encrypted manner.
 
-You or Your Application may not disseminate the Wi-Fi Network Sharing Information with any other Application, or any other device besides the Authorized Wi-Fi Target Accessory. And an Authorized Wi-Fi Target Accessory may not under any circumstance share Wi-Fi Infrastructure Information with any other device, including the end user’s Apple-branded device or any other Authorized Wi-Fi Target Accessory. You, Your Application, and the Authorized Wi-Fi Target Accessory may not use Wi-Fi Network Sharing Information for any unrelated purposes (e.g., for advertising, profiling, training models, monitoring location). You acknowledge Your use of the Wi-Fi Infrastructure Framework and the Wi-Fi Network Sharing Information is subject to Section 3.3.3. You further acknowledge and agree that You and Your Application are responsible to Apple for the Authorized Wi-Fi Target Accessory’s compliance with this Section 3.3.8(J).
+You or Your Application may not disseminate the Wi-Fi Network Sharing Information with any other Application, or any other device besides the Authorized Target Accessory. And an Authorized Target Accessory may not under any circumstance share Wi-Fi Network Sharing Information with any other device, including the end user’s Apple-branded device or any other Authorized Target Accessory. You, Your Application, and the Authorized Target Accessory may not use Wi-Fi Network Sharing Information for any unrelated purposes (e.g., for advertising, profiling, training models, monitoring location). You acknowledge Your use of the Wi-Fi Infrastructure Framework and the Wi-Fi Network Sharing Information is subject to Section 3.3.3. You further acknowledge and agree that You and Your Application are responsible to Apple for the Authorized Target Accessory’s compliance with this Section 3.3.8(J).
 
 3.3.9 Transactions and Passes
 
@@ -982,7 +1006,7 @@ Further, if Your Application is submitted for distribution via the App Store, Cu
 
 6.7 Analytics
 
-You agree to use any data Apple provides through analytics services for Applications solely for improving Your Applications and related products. Further, You agree not to provide such data to any third parties, except for a Service Provider. The Service Provider must be assisting with processing and analyzing such data on Your behalf, and not be permitted to use it for any other purpose or disclose it to any other party. For instance, You must not aggregate (or permit any third-party to aggregate) data provided to You by Apple as part of these services with other developers’ analytics information.Nor may you contribute such information to a repository for cross-developer analytics. And You must not use the analytics services or any analytics data to attempt to identify or derive information about any particular end user or device. For clarity, this paragraph does not prohibit sharing or uses expressly permitted by law.
+You agree to use any data Apple provides through analytics services for Applications solely for improving Your Applications and related products. Further, You agree not to provide such data to any third parties, except for a Service Provider. The Service Provider must be assisting with processing and analyzing such data on Your behalf, and not be permitted to use it for any other purpose or disclose it to any other party. For instance, You must not aggregate (or permit any third-party to aggregate) data provided to You by Apple as part of these services with other developers’ analytics information. Nor may you contribute such information to a repository for cross-developer analytics. And You must not use the analytics services or any analytics data to attempt to identify or derive information about any particular end user or device. For clarity, this paragraph does not prohibit sharing or uses expressly permitted by law.
 
 Apple may provide You with data in App Analytics about the performance of Your Applications relative to similar Applications on the App Store. This data is calculated using differential privacy to protect the Applications and end users. At all times, Your personal data will be handled in accordance with Apple’s Privacy Policy, which can be viewed at https://www.apple.com/legal/privacy/.
 
@@ -1964,6 +1988,16 @@ D. You agree to use, only through the use of the relevant entitlement profile, t
 
 While in no way limiting Apple’s other rights under the Agreement, or any other remedies at law or equity, if Apple has reason to believe You or Your Applications have failed to comply with any of the requirements of this Attachment or the Agreement, Apple reserves the right to revoke Your access to any or all of the APIs associated with this Attachment immediately upon notice to You; require You to remove from Your Application an entitlement profile associated with this Attachment; block updates of, hide, or remove Your Applications from the App Store; block Your Applications from distribution or updates on Apple platforms; and/or to suspend or remove You from the Apple Developer Program.
 
+Attachment 13
+
+(to the Agreement)
+
+Additional Terms for iOS and iPadOS Apps in China mainland
+
+1. As of March 15, 2026, the terms in this Attachment 13 apply to commissions and payments for Applications distributed on the China mainland storefront of the App Store on iOS and iPadOS.
+
+2. The Paid Applications Agreement is amended and restated so that Apple’s standard commission rate for the sale of Licensed Applications is twenty-five percent (25%). And the Paid Applications Agreement and Mini Apps Partner Program Addendum are amended and restated so that (1) while You are a participant in the App Store Small Business Program; (2) where the sale qualifies for a program rate under the Mini Apps Partner Program; or (3) where there is a qualifying auto-renewing subscription purchase beyond one year as described in the Paid Applications Agreement, the commission rate is twelve percent (12%).
+
 Schedule 1
 
 1. Appointment of Agent
@@ -2606,9 +2640,9 @@ United Kingdom
 
 https://www.cedr.com/p2bmediation/
 
-LYL229
+LYL238
 
-December 17, 2025
+March 12, 2026
 
 By clicking to agree to this Schedule 2, which is hereby offered to You by Apple, You agree with Apple to amend that certain Apple Developer Program License Agreement currently in effect between You and Apple (the “Agreement”) to add this Schedule 2 thereto (supplanting any existing Schedule 2). Except as otherwise provided herein, all capitalized terms shall have the meanings set forth in the Agreement.
 
@@ -3334,9 +3368,9 @@ Belgium
 
 Benin
 
-Bosnia and
+Bhutan
 
-Herzegovina
+Bosnia and Herzegovina
 
 Bulgaria
 
@@ -3408,7 +3442,9 @@ Luxembourg
 
 Malaysia
 
-Malta, Republic of
+Malta
+
+Mauritius
 
 Mexico****
 
@@ -3632,21 +3668,35 @@ Chilean Developers - Delivery of Licensed and Custom Applications to End-Users a
 
 If You are a resident of Chile, Apple will apply VAT on the commission payable by You to Apple to be deducted from Your remittance, pursuant to Chilean tax regulations, unless you confirm that you are a VAT taxpayer in such region and provide proof of your VAT status.
 
-5. JAPAN
+5. IRELAND
+
+Irish Developers - Delivery of Licensed and Custom Applications to End-Users and Custom App Distribution Customers In or Outside Ireland
+
+If You are established in Ireland and You appoint Apple Distribution International Ltd. as Your commissionaire to deliver Licensed and Custom Applications to End-Users and Custom App Distribution Customers, it is a condition of Schedule 2 and Schedule 3 that You confirm to Apple whether You are registered for Irish VAT. If You are registered for Irish VAT, You are required to provide Your Irish VAT number upon request.
+
+You must update Your account with Your respective Irish Tax ID when prompted in App Store Connect. You acknowledge that by not providing Your respective Irish Tax ID, Your Licensed or Custom Applications may be removed from the Irish Store or Your remittance payment under section 3.5 of Schedule 2 and section 3.5 of Schedule 3 may not be made for Your applicable Licensed or Custom Applications until such time as Your Irish Tax ID is provided.
+
+At request, You will provide Apple with satisfactory evidence of Your Irish Tax ID. You warrant that You will notify Apple if You cease to hold a valid Irish Tax ID.
+
+In order to comply with Apple’s obligations under applicable law to validate Your Irish Tax ID, Apple may use a service provider to complete the validation process and may transfer Your Irish Tax ID to our service provider for such purpose. Any personal data collected by Apple will be treated in accordance with Apple’s Privacy Policy which can be viewed at http://www.apple.com/legal/privacy.
+
+If You are registered for Irish VAT, Your proceeds received from ADIL are subject to Irish VAT at the prevailing rate. It is a condition of Schedule 2 and Schedule 3 that: (i) You and Apple agree and acknowledge that all supplies made by You through Apple as Your Commissionaire to End Users and Custom App Distribution Customers in Ireland constitute a taxable supply subject to VAT as defined in Irish VAT regulations; (ii) Apple will issue Self Billed Invoices (“SBIs”) with respect to such taxable supplies by You; (iii) if Apple does issue SBIs with respect to such taxable supplies by You, You will not issue tax invoices or adjustment notes in respect of those taxable supplies; and, (iv) You acknowledge and agree that You are solely responsible for determining independently, in consultation with Your own tax advisor, Your VAT obligations under Irish tax regulations.
+
+6. JAPAN
 
 (A) Japan Developers – Delivery of Licensed and Custom Applications to End-Users in Japan
 
 Where You designate iTunes KK to allow access to the Licensed and Custom Applications to End-Users in Japan:
 
-5.1 You acknowledge and agree that You have the sole responsibility for: (i) consumption tax output liability, if any, with respect to delivery on Your behalf of Your Licensed and/or Custom Applications to End-Users by iTunes KK; (ii) filing of consumption tax returns and payment of consumption tax to the Japanese government, if applicable; and (iii) determining independently, in consultation with Your own tax advisor, Your taxpayer status and tax payment obligations, and appointing your own tax administrator for consumption tax purposes.
+6.1 You acknowledge and agree that You have the sole responsibility for: (i) consumption tax output liability, if any, with respect to delivery on Your behalf of Your Licensed and/or Custom Applications to End-Users by iTunes KK; (ii) filing of consumption tax returns and payment of consumption tax to the Japanese government, if applicable; and (iii) determining independently, in consultation with Your own tax advisor, Your taxpayer status and tax payment obligations, and appointing your own tax administrator for consumption tax purposes.
 
-5.2 Commissions charged by iTunes KK to Japan resident developers will include consumption tax.
+6.2 Commissions charged by iTunes KK to Japan resident developers will include consumption tax.
 
 (B) Japan Developers – Delivery of Licensed and Custom Applications to End-Users and Custom App Distribution Customers Outside Japan
 
 If Your principal or headquarters’ office is located in Japan and You appoint Apple as Your agent or commissionaire for the marketing and End-User and Custom App Distribution Customer download of the Licensed and Custom Applications by End-Users and Custom App Distribution Customers located outside of Japan, You shall reverse charge any Japanese consumption tax that is payable on the commissions received by Apple in consideration for its services as Your agent or commissionaire under Schedule 2 and Schedule 3.
 
-6. KOREA
+7. KOREA
 
 Korean Developers – Delivery of Licensed and Custom Applications to End-Users and Custom App Distribution Customers in Korea
 
@@ -3660,13 +3710,13 @@ In order to comply with Apple’s obligations under applicable law to validate Y
 
 Pursuant to Korean tax regulations, Apple will apply Korean VAT on the commission payable by You to Apple to be deducted from Your remittance with respect to Your sales to Korean customers.
 
-7. MALAYSIA
+8. MALAYSIA
 
 Malaysian Developers – Delivery of Licensed and Custom Applications to End-Users and Custom App Distribution Customers in or outside Malaysia
 
 If You are a resident of Malaysia and You appoint Apple as Your agent or commissionaire to deliver Licensed and Custom Applications to End-Users and Custom App Distribution Customers in the jurisdictions specified in Exhibit A, pursuant to Malaysian tax regulations, Apple will apply Malaysia Service Tax on the commission payable by You to Apple to be deducted from Your remittance.
 
-8. MEXICO
+9. MEXICO
 
 Mexican Developers – Delivery of Licensed and Custom Applications to End-Users and Custom App Distribution Customers in or outside Mexico
 
@@ -3676,27 +3726,27 @@ Apple also will apply the withholding income tax rate applicable to individuals 
 
 If You are registered and have a valid tax ID in Mexico (known as the R.F.C), You must provide Apple with a copy of Your Mexican tax ID registration by uploading it using the App Store Connect tool. You warrant that You will notify Apple if You cease to hold a valid tax ID. If You do not provide proof to Apple of Your Mexican tax ID, Apple will apply the highest income tax rate in accordance with Mexican tax regulations.
 
-9. NEW ZEALAND
+10. NEW ZEALAND
 
-9.1 General
+10.1 General
 
-(a) Terms defined in the Goods and Services Tax Act 1985 (“GST Act 1985”) have the same meaning when used in Section 9 of Exhibit C.
+(a) Terms defined in the Goods and Services Tax Act 1985 (“GST Act 1985”) have the same meaning when used in Section 10 of Exhibit C.
 
-(b) This Section 9 of Exhibit C survives the termination of the Agreement.
+(b) This Section 10 of Exhibit C survives the termination of the Agreement.
 
-9.2 Delivery of Licensed and Custom Applications to End-Users and Custom App Distribution Customers in New Zealand
+10.2 Delivery of Licensed and Custom Applications to End-Users and Custom App Distribution Customers in New Zealand
 
 Where You designate APL to allow access to the Licensed and Custom Applications to End-Users and Custom App Distribution Customers in New Zealand:
 
-9.2.1 General
+10.2.1 General
 
 (a) You shall indemnify and hold APL harmless against any and all claims by the Inland Revenue for nonpayment or underpayment of GST under the GST Act 1985 and for any penalties and/or interest thereon.
 
-(b) This Section 9.2 of Exhibit C applies to supplies made by You, through APL as agent, to any End User or Custom App Distribution Customer who is resident in New Zealand.
+(b) This Section 10.2 of Exhibit C applies to supplies made by You, through APL as agent, to any End User or Custom App Distribution Customer who is resident in New Zealand.
 
 (c) You and Apple agree that APL is the operator of the electronic marketplace in respect of supplies made by You, through APL as agent, to any End-User or Custom App Distribution Customer who is resident in New Zealand, and is treated as the supplier of those supplies under s. 60C of the GST Act 1985 for GST purposes.
 
-9.2.2 Resident Developers
+10.2.2 Resident Developers
 
 (a) If You are a resident of New Zealand, You and APL agree under s.60(1C) of the GST Act 1985 that supplies of services made by You through APL as agent to any End-User or Custom App Distribution Customer resident in New Zealand, are treated as 2 separate supplies for GST purposes, being—
 
@@ -3704,9 +3754,9 @@ a supply of services from You to APL; and
 
 a supply of those services from APL to the End-User or Custom App Distribution Customer resident in New Zealand.
 
-(b) You and APL acknowledge that the supply of services from You to APL for GST purposes under Section 9.2.2(a)(i) of this Exhibit C is not subject to GST under the GST Act 1985.
+(b) You and APL acknowledge that the supply of services from You to APL for GST purposes under Section 10.2.2(a)(i) of this Exhibit C is not subject to GST under the GST Act 1985.
 
-9.2.3 Non Resident Developers
+10.2.3 Non Resident Developers
 
 (a) If You are a non resident of New Zealand, You and Apple agree under s. 60(1B) of the GST Act 1985 that supplies of services made by You through APL as agent to any End-User or Custom App Distribution Customer resident in New Zealand, are treated as 2 separate supplies for GST purposes, being –
 
@@ -3714,13 +3764,13 @@ a supply of services from You to APL; and
 
 a supply of those services from APL to the End-User or Custom App Distribution Customer resident in New Zealand.
 
-(b) You and APL acknowledge that the supply of services from You to APL for GST purposes under Section 9.2.3(a)(i) of this Exhibit C is not subject to GST under the GST Act 1985.
+(b) You and APL acknowledge that the supply of services from You to APL for GST purposes under Section 10.2.3(a)(i) of this Exhibit C is not subject to GST under the GST Act 1985.
 
-9.2.4 APL will issue to any End-User or Custom App Distribution Customer, in APL’s own name, the required documentation relating to supplies made under Section 9 of this Exhibit C.
+10.2.4 APL will issue to any End-User or Custom App Distribution Customer, in APL’s own name, the required documentation relating to supplies made under Section 10 of this Exhibit C.
 
-9.2.5 You will not issue to any End-User or Custom App Distribution Customer any documentation relating to supplies made under Section 9.2 of this Exhibit C.
+10.2.5 You will not issue to any End-User or Custom App Distribution Customer any documentation relating to supplies made under Section 10.2 of this Exhibit C.
 
-9.3 New Zealand Developers – Delivery of Licensed and Custom Applications to End-Users and Custom App Distribution Customers Outside New Zealand
+10.3 New Zealand Developers – Delivery of Licensed and Custom Applications to End-Users and Custom App Distribution Customers Outside New Zealand
 
 If You are a resident of New Zealand and You appoint Apple as Your agent or commissionaire for the marketing and End-User and Custom App Distribution Customer download of the Licensed and Custom Applications by End-Users and Custom App Distribution Customers located outside of New Zealand, You and Apple agree that under s.60C and 60(1C) of the GST Act 1985, supplies of services made by You through Apple as agent to any End-User or Custom App Distribution Customer resident outside of New Zealand are treated as 2 separate supplies for GST purposes under the GST Act 1985, being –
 
@@ -3730,13 +3780,13 @@ a supply of those services from Apple to the End-User or Custom App Distribution
 
 You and Apple acknowledge that the deemed supply of services from You to Apple under (i) above will not result in a GST cost to Apple under the GST Act 1985.
 
-10. PHILIPPINES
+11. PHILIPPINES
 
 Philippines Developers – Delivery of Licensed and Custom Applications to End-Users and Custom App Distribution Customers in Philippines
 
 If You are a resident of Philippines and You appoint Apple as Your agent or commissionaire to deliver Licensed and Custom Applications to End-Users and Custom App Distribution Customers in the jurisdictions specified in Exhibit A, it is a condition of Schedule 2 and Schedule 3 that You confirm to Apple that You are either: (i) a Philippine government or any of its political subdivisions, instrumentalities, or agencies; or, (ii) engaged in business. If You are engaged in business, you are required to provide your Philippines Taxpayer Identification Number (TIN) upon request by Apple.
 
-11. SINGAPORE
+12. SINGAPORE
 
 Singapore Developers – Delivery of Licensed and Custom Applications to End-Users and Custom App Distribution Customers in or outside Singapore
 
@@ -3746,13 +3796,13 @@ If You are not registered for Singapore GST or do not provide Your Singapore GST
 
 If You are registered for Singapore GST and have provided Your Singapore GST registration number to Apple, pursuant to Singapore tax regulations, Apple will apply Singapore GST on the commissions payable by You to Apple to be deducted from Your remittance with respect to Your sales to customers based in the countries and regions where You Appoint Apple Services Pte. Ltd. as Your commissionaire.
 
-12. TAIWAN
+13. TAIWAN
 
 Delivery of Licensed and Custom Applications to End-Users and Custom App Distribution Customers in Taiwan
 
 If You file Income Tax in Taiwan and You appoint Apple Distribution International Ltd. as Your agent or commissionaire to deliver Licensed and Custom Applications to End-Users and Custom App Distribution Customers in Taiwan, it is a condition of Schedule 2 and Schedule 3 that You provide Apple your unified business number in Taiwan if you are business or your personal identification card number in Taiwan if You are an individual (collectively “Taiwan Tax ID”).
 
-13. THAILAND
+14. THAILAND
 
 Thailand Developers – Delivery of Licensed and Custom Applications to End-Users and Custom App Distribution Customers in Thailand
 
@@ -3760,19 +3810,19 @@ If You are a resident of Thailand and You appoint Apple as Your agent or commiss
 
 If You are not registered for Thailand VAT or do not provide Your Thailand VAT registration number to Apple, pursuant to Thailand tax regulations, Apple will apply Thailand VAT on the commission payable by You to Apple to be deducted from Your remittance with respect to your sales to Thailand customers.
 
-14. UNITED STATES
+15. UNITED STATES
 
 Delivery of Licensed and Custom Applications to End-Users in the United States
 
 Where You designate Apple Inc. to allow access to the Licensed and Custom Applications to End-Users in the United States:
 
-14.1 If You are not a resident of the United States for U.S. federal income tax purposes, You will complete Internal Revenue Service Form W-8BEN and/or any other required tax forms and provide Apple with a copy of such completed form(s), and any other information necessary for compliance with applicable tax laws and regulations, as instructed on the App Store Connect site.
+15.1 If You are not a resident of the United States for U.S. federal income tax purposes, You will complete Internal Revenue Service Form W-8BEN and/or any other required tax forms and provide Apple with a copy of such completed form(s), and any other information necessary for compliance with applicable tax laws and regulations, as instructed on the App Store Connect site.
 
-14.2 If Apple, in its reasonable belief, determines that any state or local sales, use or similar transaction tax may be due from Apple or You in connection with the sale or delivery of any of the Licensed and Custom Applications, Apple will collect and remit those taxes to the competent tax authorities. To the extent that the incidence of any such tax, or responsibility for collecting that tax, falls upon You, You authorize Apple to act on Your behalf in collecting and remitting that tax, but to the extent that Apple has not collected any such tax, or has not received reimbursement for that tax, from End-Users, You shall remain primarily liable for the tax, and You will reimburse Apple for any tax payments that Apple is required to make, but is not otherwise able to recover.
+15.2 If Apple, in its reasonable belief, determines that any state or local sales, use or similar transaction tax may be due from Apple or You in connection with the sale or delivery of any of the Licensed and Custom Applications, Apple will collect and remit those taxes to the competent tax authorities. To the extent that the incidence of any such tax, or responsibility for collecting that tax, falls upon You, You authorize Apple to act on Your behalf in collecting and remitting that tax, but to the extent that Apple has not collected any such tax, or has not received reimbursement for that tax, from End-Users, You shall remain primarily liable for the tax, and You will reimburse Apple for any tax payments that Apple is required to make, but is not otherwise able to recover.
 
-14.3 In the event that You incur liability for income tax, franchise tax, business and occupation tax, or any similar taxes based on Your income, You shall be solely responsible for that tax.
+15.3 In the event that You incur liability for income tax, franchise tax, business and occupation tax, or any similar taxes based on Your income, You shall be solely responsible for that tax.
 
-15. END-USERS IN REGIONS LISTED IN EXHIBIT A, SECTION 2
+16. END-USERS IN REGIONS LISTED IN EXHIBIT A, SECTION 2
 
 Delivery of Licensed and Custom Applications to End-Users in regions listed in Exhibit A, Section 2
 
@@ -3780,7 +3830,7 @@ Where You designate Apple Distribution International Ltd., located at Hollyhill 
 
 You acknowledge that in the event Apple Distribution International Ltd. is subject to any sales, use, goods and services, value added, or other tax or levy with respect to any remittance to You, the full amount of such tax or levy shall be solely for Your account. For the avoidance of doubt, any invoice issued by You to Apple Distribution International Ltd. will be limited to amounts actually due to You, which amounts shall be inclusive of any value added or other tax or levy as set forth above. You will indemnify and hold Apple harmless against any and all claims by any competent tax authorities for any underpayment of any such sales, use, goods and services, value added, or other tax or levy, and any penalties and/or interest thereon.
 
-16. VIETNAM
+17. VIETNAM
 
 Delivery of Licensed and Custom Applications to End-Users in Vietnam
 

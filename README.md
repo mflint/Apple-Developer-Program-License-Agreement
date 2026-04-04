@@ -7,6 +7,15 @@
 
 ## Major changes
 
+### March 12, 2026
+
+* adds new note about "Accessory Notifications Framework" and "Accessory Live Activities Framework"
+* "Authorized Wi-Fi Target Accessory" is now "Authorized Target Accessory"
+* adds new note about "Family Controls Framework"
+* adds new notes about "Foveated Streaming Framework" and "Foveated Streaming Information"
+* adds new attachment 13 for apps in China mainland
+* adds notes for developers in Ireland who are registered for VAT
+
 ### December 17, 2025
 
 * adds notes about Declared Age Range API and Significant App Update Topic API
